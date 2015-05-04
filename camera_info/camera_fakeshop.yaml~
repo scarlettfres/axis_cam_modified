@@ -1,0 +1,23 @@
+image_width: 1280
+image_height: 720
+camera_name: axis_camera_fin
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [259.79888071407669, 0.0, 332.0316187674498, 0.0, 258.00868558667878, 252.46066959143357, 0.0, 0.0, 1.0]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.26129794156876202, 0.053510647147691104, -0.004329961180682111, 0.0002979023290858089, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [1.1309217097105059e+03, 0, 7.4139588116109371e+02, 0, 0, 1.1309217097105059e+03, 4.5003116035461426e+02,-7.4395756090120681e-08, 0, 0, 1, 0]
+  
+  
+
