@@ -13,7 +13,7 @@
 
 <!--   *********************** OK publish  camera_info*************   -->
 
-	<node name="axis_publish_info" pkg="sca_axis_cam" type="publish_info_cam.py">
+	<node name="axis_publish_info" pkg="axis_cam_modified" type="publish_info_cam.py">
 		<param name="filename" value="camera_fakeshop.yaml" />
 			
 	</node>
@@ -27,24 +27,24 @@
 	
 <!--   *********************** sca_axis_PTZ <= pour activer le deplacement de la camera  *************   -->
 
-	<node name="sca_axis_PTZ" pkg="sca_axis_cam" type="sca_axis_ptz.py">
+	<node name="sca_axis_PTZ" pkg="axis_cam_modified" type="sca_axis_ptz.py">
 		<param name="hostname" value="10.0.161.201" />		
 	</node>
 
 
 <!--   *********************** teleop cam au clavier assez grossier  *************   -->
 
-	<node name="sca_teleop_PTZ" pkg="sca_axis_cam" type="teleop_axis.py" />	
+	<node name="sca_teleop_PTZ" pkg="axis_cam_modified" type="teleop_axis.py" />	
 
 
 <!--   *********************** 
 va chercher le fichier issu de la calib ar_track pour positionner la camera... detection_post_calib le fait aussi  
 ****** *************   -->
 
-<!-- <include file="$(find detection_multi_cam)/launch/launch_tf.launch"/> -->
+<!-- <include file="$(find mark_tracker)/launch/launch_tf.launch"/> -->
 
 
-<!--<node name="sca_axis_tf_maj" pkg="sca_axis_cam" type="publish_axis_tf.py"/>-->
+<!--<node name="sca_axis_tf_maj" pkg="axis_cam_modified" type="publish_axis_tf.py"/>-->
 	
 
 
