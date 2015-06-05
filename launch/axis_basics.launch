@@ -1,7 +1,6 @@
 <launch>
 <!--   *********************** camera_axis.py av notre bon IP mais pb ac camera_info  chgt aide git pour publish info cam *************   -->
 
-	
 	<node name="axis_connection" pkg="axis_cam_modified" type="axis.py"  required="true">
 		<param name="hostname" value="10.0.161.201" />
 		<param name="password" value="fakeshop_pepper" />
@@ -15,9 +14,7 @@
 
 	<node name="image_transport_decompressed" pkg="image_transport" type="republish" 
 	args="compressed in:=image_raw raw out:=image_raw //image_transport:=compressed">
-	</node>
-			
-	
+	</node>	
 
 </launch>
 
