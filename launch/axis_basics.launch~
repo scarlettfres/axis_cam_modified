@@ -15,6 +15,16 @@
 	<node name="image_transport_decompressed" pkg="image_transport" type="republish" 
 	args="compressed in:=image_raw raw out:=image_raw //image_transport:=compressed">
 	</node>	
+	
+	
+	<!--
+	<node name="sca_axis_PTZ" pkg="axis_cam_modified" type="sca_axis_ptz.py">
+		<param name="hostname" value="10.0.161.201" />		
+	</node>
+	
+	<node name="sca_axis_tf_maj" pkg="axis_cam_modified" type="publish_axis_tf.py"/>-->
+
+	
 
 </launch>
 
