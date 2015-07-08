@@ -14,8 +14,9 @@ if __name__ == "__main__":
     rospy.init_node('_init_pose_axis')
     pub = rospy.Publisher('cmd', Axis, queue_size=5)
     state = Axis()
-    state.pan = -30
-    state.tilt = -70
+
+    state.pan = -107.709701538
+    state.tilt = -36.0
     time.sleep(1)
     pub.publish(state)
     time.sleep(1)
