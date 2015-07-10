@@ -15,8 +15,9 @@ if __name__ == "__main__":
     pub = rospy.Publisher('cmd', Axis, queue_size=5)
     state = Axis()
 
-    state.pan = -107.709701538
-    state.tilt = -36.0
+    print "oooooooooooooooooooooooooo", sys.argv
+    state.pan = float(sys.argv[1])
+    state.tilt = float(sys.argv[2])
     time.sleep(1)
     pub.publish(state)
     time.sleep(1)
