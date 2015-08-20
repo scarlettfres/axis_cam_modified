@@ -17,19 +17,19 @@
 	</node>
 
 
-<!--  5 
+<!--  5 -->
 	<node name="sca_axis_PTZ" pkg="axis_cam_modified" type="sca_axis_ptz.py">
 		<param name="hostname" value="10.0.161.201" />
 	</node>
 
--->
 
-	<!--placer ca camera dans la position " ini"
+
+	<!--placer ca camera dans la position " ini"-->
 
 	<arg name="pan" default="-107.709701538" />
-	<arg name="tilt" default="-48.0" />
+	<arg name="tilt" default="-36.0" />
 	<node name="init_position_cam" pkg="axis_cam_modified" type="init_position_cam_fixe.py"  args="$(arg pan) $(arg tilt)"/>
--->
+
 
 	<!--<node name="sca_axis_tf_maj" pkg="axis_cam_modified" type="publish_axis_tf.py"/>-->
 
